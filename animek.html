@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Lista</title>
+    <link rel="stylesheet" href="anime.css">
+    <style>
+        /* Alapértelmezett stílusok */
+        .anime-item {
+            display: inline-block; /* Inline blokk a grid helyett */
+            margin: 10px;
+            text-align: center;
+        }
+        .hidden {
+            display: none; /* Rejtett anime elem */
+        }
+        body {
+            background: url('animebackground.jpg.webp') no-repeat center center fixed; /* Cseréld ki a háttérképet a saját képedre */
+            background-size: cover; /* A háttérkép kitölti a teljes képernyőt */
+        }
+    </style>
+   
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="DALL·E 2024-10-08 00.06.45 - A circular version of the 'AnimeHun' logo, featuring the same sleek and modern style with bold, stylized text. The design should be enclosed within a .webp" alt="Logo"> <!-- Helyezd el a saját logód URL-jét -->
+            <span>AnimeHun</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="animek.html">Animék</a></li>
+                <li><a href="ajanlasok.html">Ajánlások</a></li>
+            </ul>
+        </nav>
+
+        <!-- Kereső mező -->
+        <div class="search-container">
+            <input type="text" placeholder="Keresés..." id="search-input" oninput="searchAnime()" />
+        </div>
+    </header>
+
+    <section class="anime-grid">
+        <div class="anime-item" data-name="blue lock">
+            <a href="Bleulock.html">
+                <img src="blue-lovk-1652686606.webp" alt="Blue Lock">
+                <div class="play-icon">▶</div> <!-- Play ikon -->
+                <p>Blue Lock</p>
+            </a>
+            <div class="tags">
+                <span>Football , </span>
+                <span>Sport , </span>
+                <span>Shounen , </span>
+            </div>
+        </div>
+        <div class="anime-item" data-name="Jujjutsu Kaisen">
+            <a href="Jujjutsukaisen.html">
+                <img src="satoru-gojo-jujutsu-3840x2160-9292.jpg" alt="Jujutsu Kaisen">
+                <div class="play-icon">▶</div> <!-- Play ikon -->
+                <p>Jujutsu Kaisen</p>
+            </a>
+            <div class="tags">
+                <span>Akció , </span>
+
+                <span>Shounen , </span>
+
+                <span>Iskolai , </span>
+
+                <span>Supernatural  </span>
+
+            </div>
+        </div>
+        <div class="anime-item" data-name="Action , Demon , Shounen , Supernatural , Historical ">
+            <a href="Demon slayer.html">
+                <img src="demon slayer image.webp" alt="Demon Slayer">
+                <div class="play-icon">▶</div> <!-- Play ikon -->
+                <p>Demon Slayer</p>
+            </a>
+            <div class="tags">
+            <span>Akció , </span>
+            <span>Shounen , </span>
+            <span>Történelmi , </span>
+            <span>Supernatural ,</span>
+            <span>Demon</span> 
+
+        </div>
+        </div>
+        <div class="anime-item" data-name="Action , Drama , Shounen , Fantasy , Mystery , Militay , Szupererő ">
+            <a href="Attack on titan.html">
+                <img src="Attack on titan.jpg" alt="Attack On Titan">
+                <div class="play-icon">▶</div> <!-- Play ikon -->
+                <p>Attack On Titan</p>
+            </a>
+            <div class="tags">
+            <span>Akció , </span>
+            <span>Shounen , </span>
+            <span>Rejtély , </span>
+            <span>Szupererő ,</span>
+            <span>Drama ,</span> 
+            <span>Fantasy ,</span> 
+            <span>Katonai ,</span>
+
+            
+            
+
+        </div>
+    </section>
+
+    <script>
+        function searchAnime() {
+            const input = document.getElementById("search-input").value.toLowerCase(); // Keresési szöveg
+            const animeItems = document.querySelectorAll('.anime-item'); // Az összes anime elem
+
+            animeItems.forEach(item => {
+                const name = item.getAttribute('data-name').toLowerCase(); // Az anime neve
+                if (name.includes(input)) {
+                    item.classList.remove('hidden'); // Megjeleníti az elemet
+                } else {
+                    item.classList.add('hidden'); // Elrejti az elemet
+                }
+            });
+        }
+    </script>
+</body>
+</html>

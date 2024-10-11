@@ -1,0 +1,16 @@
+img {
+    width: 40%; /* vagy adj meg egy fix szélességet, pl. width: 500px; */
+    height: auto; /* ez biztosítja, hogy az arányok megmaradjanak */
+}
+.anime-title {
+    font-size: 24px; /* Állítsd be a kívánt méretet */
+    font-family: Arial, sans-serif; /* Ugyanaz a betűtípus, mint máshol */
+    color: #fff; /* Betűszín, módosítható */
+    text-shadow: 2px 2px 4px #000; /* Szövegárnyék a jobb láthatóság érdekében */
+    text-align: center; /* Igazítás középre */
+    margin-top: 10px; /* Térköz a kép és a cím között */
+}
+.description span {
+    opacity: 0; /* Kezdetben láthatatlan */
+    transition: opacity 0.5s ease; /* Átmenet a láthatósághoz */
+}

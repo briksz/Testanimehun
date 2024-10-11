@@ -1,0 +1,55 @@
+img {
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+.title {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+.grid-container {
+    display: flex; /* Használj flexboxot az elrendezéshez */
+    gap: 2px; /* Még kisebb távolság az elemek között */
+    margin: 5px 0; /* Kisebb margó */
+    flex-wrap: wrap; /* Engedélyezd az elemek átváltását új sorba */
+}
+
+.grid-item {
+    background-color: rgba(0, 0, 0, 0.9); /* Fekete háttér, kevésbé áttetsző */
+    border: 1px solid rgba(255, 255, 255, 0.9); /* Világos keret */
+    padding: 3px; /* Még kisebb padding */
+    text-align: center;
+    color: white; /* Fehér szöveg */
+    font-size: 10px; /* Még kisebb szövegméret */
+    border-radius: 2px; /* Kisebb lekerekítés */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); /* Kisebb árnyék */
+    flex: 1 1 45%; /* Az elemek legyenek rugalmasak, hogy két oszlopba férjenek */
+    min-width: 80px; /* Minimum szélesség az elemeknek */
+}
+h1, h2, p {
+    font-size: 2em; /* Növelheted a méretet igény szerint */
+    text-shadow: 
+        2px 2px 0 black, 
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black,
+        0 0 5px white; /* Fekete árnyék és egy kis fehér fényeffektus */
+    transition: transform 0.3s, text-shadow 0.3s; /* Átmeneti hatás a transform és text-shadow tulajdonságokra */
+}
+
+h1:hover, h2:hover, p:hover {
+    transform: scale(0.5); /* Nagyobb lesz, amikor fölé viszed az egeret */
+    text-shadow: 
+        3px 3px 0 black, 
+        -3px -3px 0 black,
+        3px -3px 0 black,
+        -3px 3px 0 black,
+        0 0 10px white; /* Fokozott árnyék és fényeffektus */
+}

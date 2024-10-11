@@ -1,0 +1,12 @@
+.description {
+    background-color: #080b0e; /* Háttérszín a leírásnak */
+    color: white; /* Fehér szöveg */
+    padding: 20px; /* Belső margó */
+    border-radius: 8px; /* Lekerekített sarkok */
+    margin-top: 20px; /* Felső margó a leírás körül */
+}
+
+.description h2 {
+    font-size: 24px; /* Fejléc mérete a leírásban */
+    margin-bottom: 10px; /* Különbség a fejléc és a szöveg között */
+}

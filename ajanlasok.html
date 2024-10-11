@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajánlások</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Ajanlasok.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="DALL·E 2024-10-08 00.06.45 - A circular version of the 'AnimeHun' logo, featuring the same sleek and modern style with bold, stylized text. The design should be enclosed within a .webp" alt="Logo">
+            <span>AnimeHun</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="animek.html">Animék</a></li>
+                <li><a href="ajanlasok.html">Ajánlások</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Ajánlások</h1>
+        
+        <section>
+            <h2>Keresés Műfajok Szerint</h2>
+            <select id="tag-filter">
+                <option value="all">Összes</option>
+                <option value="Football">Football</option>
+                <option value="Sport">Sport</option>
+                <option value="Shounen">Shounen</option>
+                <option value="Supernatural">Supernatural</option>
+                <option value="Action">Action</option>
+                <option value="Iskolai">Iskolai</option>
+                <option value="Demon">Demon</option>
+                <option value="historical">historical</option>
+                <option value="Drama">Mystery</option>
+                <option value="Drama">Drama</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Military">Military</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Superpower">Superpower</option>
+            </select>
+
+            <div class="anime-list">
+                <div class="anime-item" data-tags="Football, Sport, Shounen">
+                    <a href="Bleulock.html">
+                        <img src="blue-lovk-1652686606.webp" alt="Blue Lock">
+                        <h2 class="anime-title">Blue Lock</h2>
+                    </a>
+                </div>
+                <!-- Itt adj hozzá több anime-t a megfelelő címkékkel -->
+                
+                <div class="anime-item" data-tags="Supernatural, Shounen, Iskolai, Action, Demon">
+                    <a href="Jujjutsukaisen.html">
+                        <img src="satoru-gojo-jujutsu-3840x2160-9292.jpg" alt="Anime 2">
+                        <h2 class="anime-title">Jujutsu Kaisen</h2>
+                        
+                </div>
+                <div class="anime-item" data-tags="Action, Shounen, historical, Supernatural, Demon">
+                    <a href="Demon slayer.html">s
+                        <img src="demon slayer image.webp" alt="Demon Slayer">
+                        <h2 class="anime-title">Demon Slayer</h2>
+                    </a>
+                </div>
+
+                <div class="anime-item" data-tags="Action, Shounen, Mystery, Military, Superpower, Fantasy">
+                    <a href="Attack on titan.html">s
+                        <img src="Attack on titan.jpg" alt="Attack on Titan">
+                        <h2 class="anime-title">Attack on Titan</h2>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AnimeHun</p>
+    </footer>
+
+    <script>
+        const filter = document.getElementById('tag-filter');
+        const animeItems = document.querySelectorAll('.anime-item');
+
+        filter.addEventListener('change', function() {
+            const selectedTag = this.value;
+            animeItems.forEach(item => {
+                if (selectedTag === 'all' || item.getAttribute('data-tags').includes(selectedTag)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

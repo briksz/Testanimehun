@@ -1,0 +1,156 @@
+/* Általános stílusok */
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Fejléc stílus */
+header {
+    background-color: #2c3e50; /* Sötétkék fejléc háttérszíne */
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Balra a logó, jobbra a menü */
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Logó mérete */
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px; /* Logó melletti szöveg mérete */
+    color: white; /* Logó melletti szöveg színe */
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Távolság a navigációs elemek között */
+}
+
+nav ul li a {
+    color: white; /* Alap link szín */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Fehér fény hatás */
+    background-color: rgba(255, 255, 255, 0.2); /* Világos háttér hoverkor */
+}
+
+/* Keresőmező stílus */
+.search-container {
+    margin-left: auto; /* Jobbra igazítás a fejlécben */
+}
+
+#search-input {
+    padding: 15px; /* Belső margó */
+    border: 2px solid #00f; /* Kék keret */
+    border-radius: 20px; /* Lekerekített sarkok */
+    outline: none; /* Nincs keret az aktiváláskor */
+    font-size: 18px; /* Betűméret */
+    transition: all 0.3s ease; /* Zökkenőmentes átmenet */
+}
+
+#search-input:focus {
+    border-color: #fff; /* Fehér keret fókuszáláskor */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Fényes árnyék fókuszáláskor */
+    background-color: rgba(255, 255, 255, 0.1); /* Világos háttér fókuszáláskor */
+}
+
+/* Kereső gomb stílus */
+#search-button {
+    padding: 15px 20px; /* Belső margó */
+    border: none; /* Nincs keret */
+    border-radius: 20px; /* Lekerekített sarkok */
+    background-color: #00f; /* Kék háttér */
+    color: #fff; /* Fehér szöveg */
+    font-size: 18px; /* Betűméret */
+    cursor: pointer; /* Kézkurzor */
+    transition: background-color 0.3s ease; /* Zökkenőmentes átmenet */
+}
+
+#search-button:hover {
+    background-color: #0056b3; /* Sötétebb kék hoverkor */
+}
+
+/* Anime itemek */
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 anime egymás mellett */
+    gap: 20px; /* Távolság az elemek között */
+    padding: 20px;
+}
+
+.anime-item {
+    display: inline-block; /* Inline blokk a grid helyett */
+    margin: 10px;
+    text-align: center;
+}
+
+.anime-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.anime-item p {
+    margin: 5px 0 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00f;
+    text-shadow: 2px 2px 5px #ffffff; /* Fehér árnyék a szöveghez */
+}
+
+.hidden {
+    display: none; /* Rejtett anime elem */
+}
+.anime-item {
+    position: relative; /* Pozicionáljuk a play ikont */
+    background-color: #222;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* A transformációt és az átlátszóságot is animáljuk */
+}
+
+.anime-item:hover {
+    transform: scale(1.05); /* Nagyítás hoverkor */
+    opacity: 0.8; /* Halványodás hoverkor */
+}
+
+.play-icon {
+    display: none; /* Alapértelmezés szerint elrejtve */
+    position: absolute; /* Pozicionálás */
+    top: 50%; /* Középre igazítjuk */
+    left: 50%; /* Középre igazítjuk */
+    transform: translate(-50%, -50%); /* Igazítás */
+    font-size: 36px; /* Play ikon mérete */
+    color: white; /* Play ikon színe */
+    transition: opacity 0.3s ease; /* Átlátszóság animáció */
+}
+
+.anime-item:hover .play-icon {
+    display: block; /* Megjelenik, amikor hoverolunk */
+    opacity: 1; /* Teljes átlátszóság */
+}
