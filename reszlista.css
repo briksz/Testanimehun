@@ -1,0 +1,40 @@
+/* Alap stílusok */
+.episode-list {
+    list-style-type: none; /* Nincs pont a lista előtt */
+    padding: 0; /* Padding eltávolítása */
+    margin: 20px 0; /* Margó a lista körül */
+}
+
+/* Listaelemek */
+.episode-list li {
+    margin: 5px 0; /* Kisebb margó a listaelemek között */
+}
+
+.episode-list a {
+    display: inline-block; /* A link gombként viselkedik */
+    background-color: #34495e; /* Háttérszín */
+    color: white; /* Szöveg szín */
+    padding: 8px 12px; /* Kisebb belső margó */
+    text-decoration: none; /* Nincs aláhúzás */
+    border-radius: 8px; /* Lekerekített sarkok */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Effektek */
+    font-size: 14px; /* Kisebb betűméret */
+}
+
+/* Hover állapot */
+.episode-list a:hover {
+    background-color: #2c3e50; /* Sötétebb szín hoverkor */
+    transform: scale(1.05); /* Növelés hoverkor */
+}
+
+/* Videó konténer */
+.video-container {
+    display: none; /* Alapból el van rejtve */
+    margin-top: 20px; /* Felső margó a videó konténer felett */
+    text-align: center; /* Középre igazítás */
+}
+
+video {
+    max-width: 100%; /* Videó maximális szélessége */
+    border-radius: 10px; /* Lekerekített sarkok a videón */
+}

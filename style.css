@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Sötét háttérszín */
+    color: white; /* Fehér szöveg szín */
+}
+
+/* Fejléc és navigáció */
+header {
+    background-color: #2c3e50; /* A fejléc háttérszíne */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between; /* A logó balra, a menü jobbra kerül */
+    align-items: center;
+    padding: 0 20px; /* Padding a fejléc belsejében */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Logó szélessége */
+    height: auto; /* Magasság automatikus */
+    margin-right: 10px; /* Különbség a logó és a név között */
+}
+
+.logo span {
+    font-size: 24px; /* AnimeHun név mérete */
+    color: white; /* AnimeHun név színe */
+    font-weight: bold; /* AnimeHun név vastagsága */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Flexbox az elemek vízszintes elrendezéséhez */
+}
+
+nav ul li {
+    margin-left: 15px; /* Margó a navigációs elemek között */
+}
+
+nav ul li a {
+    color: white; /* Fehér link szín */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Hover és kattintás effektek */
+}
+
+/* Hover és aktív állapot */
+nav ul li a:hover, nav ul li a:active {
+    background-color: #ffffff; /* Világítás fehérrel */
+    color: #2c3e50; /* Sötét szín hoverkor */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Világító hatás hoverkor */
+    border-radius: 8px; /* Lekerekített sarkok */
+}
+
+/* Fő tartalom */
+main {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 48px; /* Főcím mérete */
+    color: #ffffff; /* Fehér szín */
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5), 4px 4px 0 rgba(0, 0, 0, 0.3); /* Árnyék hatás */
+    transform: perspective(500px) rotateX(10deg); /* 3D hatás */
+    display: inline-block; /* Igazítás a 3D hatás érdekében */
+}
+
+/* Rólam szakasz */
+.about-me {
+    background-color: #34495e; /* Kiemeléshez háttérszín */
+    color: white; /* Szöveg színe */
+    padding: 20px; /* Belső margó */
+    border-radius: 8px; /* Lekerekített sarkok */
+    margin: 40px auto; /* Külső margó a kiemelt szakasz körül */
+    max-width: 800px; /* Maximális szélesség */
+    text-align: center; /* Középre igazítás */
+}
+
+.about-me h2 {
+    font-family: 'Courier New', Courier, monospace; /* Betűtípus beállítása */
+    font-size: 32px; /* Fejléc mérete */
+    margin-bottom: 15px; /* Különbség a főcím és a szöveg között */
+}
+
+.about-me p {
+    font-family: 'Arial', sans-serif; /* Betűtípus beállítása a szöveghez */
+    font-size: 18px; /* Szöveg mérete */
+    line-height: 1.5; /* Sorok közötti távolság */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50; /* Footer háttérszín */
+    color: white; /* Fehér footer szöveg */
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Az elrejtett anime elemek */
+.hidden {
+    display: none; /* Az elrejtett elemek nem jelennek meg */
+}

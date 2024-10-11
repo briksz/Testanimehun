@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Lock</title>
+    <link rel="stylesheet" href="style.css"> <!-- Hivatkozás a CSS fájlra -->
+    <link rel="stylesheet" href="cimkek.css"> <!-- Hivatkozás a CSS fájlra -->
+    <link rel="stylesheet" href="animeknekstyleja.css"> <!-- Hivatkozás a CSS fájlra -->
+    <link rel="stylesheet" href="reszlista.css"> <!-- Hivatkozás a részek listájának CSS fájljára -->
+    <link rel="stylesheet" href="Animekadatlapjat feldobo.css"> <!-- Hivatkozás a részek listájának CSS fájljára -->
+    <style>
+        body {
+            background: url('Blue-Lock-TV-Anime.webp') no-repeat center center fixed; /* Cseréld ki a háttérképet a saját képedre */
+            background-size: cover; /* A háttérkép kitölti a teljes képernyőt */
+        }
+        .video-container {
+            display: none; /* Alapértelmezés szerint rejtve van */
+            margin-top: 10px;
+        }
+        .description {
+            background-color: rgba(2, 1, 1, 0.8); /* Fehér háttér, 80%-os átlátszósággal */
+            padding: 15px; /* Kicsi párnázás a szöveg körül */
+            border-radius: 10px; /* Lekerekített sarkok */
+            margin-top: 20px; /* Felső margó a szakasz számára */
+        }
+        .tags a {
+            text-decoration: none;
+            background-color: #333;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 5px;
+            font-size: 12px;
+        }
+        .episode-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .episode-list a {
+            position: relative;
+            display: block;
+            width: 150px;
+            height: 200px;
+        }
+        .episode-list img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .episode-list .episode-number {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="DALL·E 2024-10-08 00.06.45 - A circular version of the 'AnimeHun' logo, featuring the same sleek and modern style with bold, stylized text. The design should be enclosed within a .webp" alt="AnimeHun Logo">
+            <span>AnimeHun</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="animek.html">Animék</a></li>
+                <li><a href="ajanlasok.html">Ajánlások</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Blue Lock</h1>
+        <div class="anime-detail">
+            <img src="blue-lovk-1652686606.webp" alt="Blue Lock" style="max-width: 300px; border-radius: 10px;">
+            <div class="tags">
+                <a href="ajanlasok.html#Football" class="tag">Football</a>
+                <a href="ajanlasok.html#Sport" class="tag">Sport</a>
+                <a href="ajanlasok.html#Shonen" class="tag">Shonen</a>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">Kiadás: 2022-10-09</div>
+            <div class="grid-item">Tipus: Sorozat</div>
+            <div class="grid-item">Fordító: Muteki Fansub</div>
+            <div class="grid-item">Részek: 24/24</div>
+            <div class="grid-item">Státusz: Befejezett</div>
+        </div>
+        
+        <div class="description"> <!-- Leírás szakasz -->
+            <h2>Leírás</h2>
+            <p>Blue Lock egy izgalmas anime, amely a focira összpontosít. Az anime középpontjában egy különleges edzőprogram áll, amelynek célja, hogy megtalálja Japán legjobb támadóját. A történet során fiatal focisták versengenek egymással, hogy bebizonyítsák tehetségüket és elérjék a céljaikat. A Blue Lock nemcsak a sportteljesítményekre, hanem a karakterek fejlődésére és a csapatdinamika bemutatására is fókuszál, bemutatva a sport világának kihívásait és örömeit.</p>
+        </div>
+        
+
+        <h2>Részek</h2>
+        <ul class="episode-list">
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/e/8/4/K/e84Kr.haa.mp4'); return false;">
+                <img src="x8m3wwbnpyr91.jpg" alt="1. rész">
+                <span class="episode-number">1. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/B/0/4/K/B04Kr.haa.mp4'); return false;">
+                <img src="Additional_Time_2_Title.webp" alt="2. rész">
+                <span class="episode-number">2. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/M/1/4/K/M14Kr.haa.mp4'); return false;">
+                <img src="ep3.webp" alt="3. rész">
+                <span class="episode-number">3. Rész</span>
+            </a></li>
+              <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/4/2/4/K/424Kr.haa.mp4'); return false;">
+                <img src="ep4.webp" alt="4. rész">
+                <span class="episode-number">4. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/w/3/4/K/w34Kr.haa.mp4'); return false;">
+                <img src="ep5.jpg" alt="5. rész">
+                <span class="episode-number">5. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/E/3/4/K/E34Kr.haa.mp4'); return false;">
+                <img src="ep6.jpg" alt="6. rész">
+                <span class="episode-number">6. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/b/3/4/K/b34Kr.haa.mp4'); return false;">
+                <img src="ep7.jpg" alt="7. rész">
+                <span class="episode-number">7. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/t/0/4/K/t04Kr.haa.mp4'); return false;">
+                <img src="ep8.jpg" alt="8. rész">
+                <span class="episode-number">8. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/9/5/4/K/954Kr.haa.mp4'); return false;">
+                <img src="images.jpg" alt="9. rész">
+                <span class="episode-number">9. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/_/L/5/K/_L5Kr.haa.mp4'); return false;">
+                <img src="ep10.avif" alt="10. rész">
+                <span class="episode-number">10. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/e/J/5/K/eJ5Kr.haa.mp4'); return false;">
+                <img src="ep11.jpg" alt="11. rész">
+                <span class="episode-number">11. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/9/E/5/K/9E5Kr.haa.mp4'); return false;">
+                <img src="ep12.jpg" alt="12. rész">
+                <span class="episode-number">12. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://animedrive.hu/watch/?id=1240&ep=13'); return false;">
+                <img src="blue-lock-episode-13-preview-images-v0-yknjg3v3uz9a1.jpg" alt="13. rész">
+                <span class="episode-number">13. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/N/K/5/K/NK5Kr.haa.mp4'); return false;">
+                <img src="ep14.webp" alt="14. rész">
+                <span class="episode-number">14. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/5/L/5/K/5L5Kr.haa.mp4'); return false;">
+                <img src="ep15.jpg" alt="15. rész">
+                <span class="episode-number">15. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/E/I/5/K/EI5Kr.haa.mp4'); return false;">
+                <img src="blue-lock-episode-16-preview-images-v0-qg47viopu5ea1.jpg" alt="16. rész">
+                <span class="episode-number">16. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/A/j/6/K/Aj6Kr.haa.mp4'); return false;">
+                <img src="ep17.jpg" alt="17. rész">
+                <span class="episode-number">17. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/-/j/6/K/-j6Kr.haa.mp4'); return false;">
+                <img src="blue-lock-episode-18-exclusive-previews-6-v0-69hw04fd1eha1.jpg" alt="18. rész">
+                <span class="episode-number">18. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/M/e/6/K/Me6Kr.haa.mp4'); return false;">
+                <img src="blue-lock-episode-19-exclusive-preview-images-3-v0-kfy6jed9fria1.jpg" alt="19. rész">
+                <span class="episode-number">19. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/g/m/6/K/gm6Kr.haa.mp4'); return false;">
+                <img src="ep20.jpg" alt="20. rész">
+                <span class="episode-number">20. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/D/m/6/K/Dm6Kr.haa.mp4'); return false;">
+                <img src="blue-lock-episode-21-exclusive-preview-images-6-v0-ynwcg2w72jla1.jpg" alt="21. rész">
+                <span class="episode-number">21. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/V/n/6/K/Vn6Kr.haa.mp4'); return false;">
+                <img src="ep22.webp" alt="22. rész">
+                <span class="episode-number">22. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="gplayVideo('https://1a-1791.com/video/s8/2/H/2/6/K/H26Kr.haa.mp4'); return false;">
+                <img src="ep23.webp" alt="23. rész">
+                <span class="episode-number">23. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/u/3/6/K/u36Kr.haa.mp4'); return false;">
+                <img src="ep24.jpg" alt="24. rész">
+                <span class="episode-number">24. Rész</span>
+            </a></li>
+       
+        </ul>
+
+        <div class="video-container">
+            <video id="videoPlayer" controls>
+                <source id="videoSource" src="" type="video/mp4">
+                A böngésződ nem támogatja a videólejátszást.
+            </video>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AnimeHun</p>
+    </footer>
+
+    <script>
+        function playVideo(videoFile) {
+            const videoPlayer = document.getElementById('videoPlayer');
+            const videoSource = document.getElementById('videoSource');
+            videoSource.src = videoFile; // Frissítjük a forrást
+            videoPlayer.load(); // Újratöltjük a videót
+            videoPlayer.play(); // Lejátszás
+            document.querySelector('.video-container').style.display = 'block'; // Megjelenítjük a videó konténert
+        }
+
+        const description = document.querySelector('.description');
+        const words = description.innerText.split(' '); // Szavakra bontja a szöveget
+        description.innerHTML = ''; // Kiüríti a leírást
+
+        words.forEach((word, index) => {
+            const span = document.createElement('span');
+            span.innerText = word + ' '; // Hozzáad egy szóközt
+            span.style.opacity = 0; // Kezdetben láthatatlan
+            description.appendChild(span); // Hozzáadja a span-t a leíráshoz
+
+            // Fokozatosan láthatóvá teszi a szót
+            setTimeout(() => {
+                span.style.opacity = 1;
+            }, index * 500); // Fokozatosan 500 ms-onként
+        });
+    </script>
+    <script> 
+    function playVideo(videoFile) {
+        const videoPlayer = document.getElementById('videoPlayer');
+        const videoSource = document.getElementById('videoSource');
+        videoSource.src = videoFile; // Frissítjük a forrást
+        videoPlayer.load(); // Újratöltjük a videót
+        videoPlayer.play(); // Lejátszás
+        const videoContainer = document.querySelector('.video-container');
+        videoContainer.style.display = 'block'; // Megjelenítjük a videó konténert
+        
+        // Görgetés a videóhoz
+        videoContainer.scrollIntoView({ behavior: 'smooth' }); } 
+        </script>
+</body>
+</html>

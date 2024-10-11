@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jujjutsu Kaisen</title>
+    <link rel="stylesheet" href="style.css"> <!-- Hivatkozás a CSS fájlra -->
+    <link rel="stylesheet" href="cimkek.css"> <!-- Hivatkozás a CSS fájlra -->
+    <link rel="stylesheet" href="animeknekstyleja.css"> <!-- Hivatkozás a CSS fájlra -->
+    <link rel="stylesheet" href="reszlista.css"> <!-- Hivatkozás a részek listájának CSS fájljára -->
+    <link rel="stylesheet" href="Animekadatlapjat feldobo.css"> <!-- Hivatkozás a részek listájának CSS fájljára -->
+    <style>
+        body {
+            background: url('jujutsu_kaisen_anime_live_wallpaper__video__by_shelloux_dhb78z8-fullview.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .video-container {
+            display: none; /* Alapértelmezés szerint rejtve van */
+            margin-top: 10px;
+        }
+        .description {
+            background-color: rgba(2, 1, 1, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            color: white;
+        }
+        .tags a {
+            text-decoration: none;
+            background-color: #333;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 5px;
+            font-size: 12px;
+        }
+        .episode-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .episode-list a {
+            position: relative;
+            display: block;
+            width: 150px;
+            height: 200px;
+        }
+        .episode-list img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .episode-list .episode-number {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="DALL·E 2024-10-08 00.06.45 - A circular version of the 'AnimeHun' logo, featuring the same sleek and modern style with bold, stylized text. The design should be enclosed within a .webp" alt="AnimeHun Logo">
+            <span>AnimeHun</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="animek.html">Animék</a></li>
+                <li><a href="ajanlasok.html">Ajánlások</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Jujutsu Kaisen</h1>
+        <div class="anime-detail">
+            <img src="satoru-gojo-jujutsu-3840x2160-9292.jpg" alt="Jujutsu Kaisen" style="max-width: 300px; border-radius: 10px;">
+            <div class="tags">
+                <a href="ajanlasok.html#Akció" class="tag">Akció</a>
+                <a href="ajanlasok.html#Demon" class="tag">Démonok</a>
+                <a href="ajanlasok.html#Shounen" class="tag">Shounen</a>
+                <a href="ajanlasok.html#Supernatural" class="tag">Supernatural</a>
+                <a href="ajanlasok.html#Iskolai" class="tag">Iskolai</a>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">Kiadás: 2020-10-03</div>
+            <div class="grid-item">Tipus: Sorozat</div>
+            <div class="grid-item">Forditó: Naruto-Kun</div>
+            <div class="grid-item">Részek: 24/24</div>
+            <div class="grid-item">Státusz: Befejezett</div>
+        </div>
+        
+        <div class="description" id="description"> <!-- Leírás szakasz -->
+            <h2>Leírás</h2>
+            <p>Jujutsu Kaisen egy népszerű anime és manga, amely Itadori Yuujiról szól, egy középiskolás fiúról, aki véletlenül lenyel egy démoni ujjat, és megosztja testét a "démonok királyával", Sukunával. Ezután csatlakozik a Jujutsu Mágusok világához, ahol átkokkal harcol, hogy megvédje az emberiséget, miközben megpróbálja összegyűjteni Sukuna többi ujját, hogy elpusztítsák a démont.</p>
+        </div>
+        
+
+        <h2>Részek</h2>
+        <ul class="episode-list">
+             
+            <li> <a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/-/p/j/2/-pj2k.haa.mp4'); return false;">
+                <img src="jep1.jpg" alt="1. rész">
+                <span class="episode-number">1. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/M/y/k/2/Myk2k.haa.mp4'); return false;">
+                <img src="jep2.webp" alt="2. rész">
+                <span class="episode-number">2. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/O/Y/k/2/OYk2k.haa.mp4'); return false;">
+                <img src="jep3.webp" alt="3. rész">
+                <span class="episode-number">3. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/K/l/l/2/Kll2k.haa.mp4'); return false;">
+                <img src="jep4.webp" alt="4. rész">
+                <span class="episode-number">4. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/y/L/l/2/yLl2k.haa.mp4'); return false;">
+                <img src="jep5.webp" alt="5. rész">
+                <span class="episode-number">5. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/Y/8/l/2/Y8l2k.haa.mp4'); return false;">
+                <img src="jep6.webp" alt="6. rész">
+                <span class="episode-number">6. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/6/E/m/2/6Em2k.haa.mp4'); return false;">
+                <img src="jep7.webp" alt="7. rész">
+                <span class="episode-number">7. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/M/5/m/2/M5m2k.haa.mp4'); return false;">
+                <img src="jep8.png" alt="8. rész">
+                <span class="episode-number">8. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/4/F/n/2/4Fn2k.haa.mp4'); return false;">
+                <img src="jep9.webp" alt="9. rész">
+                <span class="episode-number">9. Rész</span>
+            </a></li>
+
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/w/6/n/2/w6n2k.haa.mp4'); return false;">
+                <img src="jep10.webp" alt="10. rész">
+                <span class="episode-number">10. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/w/K/o/2/wKo2k.haa.mp4'); return false;">
+                <img src="jep11.webp" alt="11. rész">
+                <span class="episode-number">11. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/K/u/q/2/Kuq2k.haa.mp4'); return false;">
+                <img src="jep12.webp" alt="12. rész">
+                <span class="episode-number">12. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/-/R/q/2/-Rq2k.haa.mp4'); return false;">
+                <img src="jep13.webp" alt="13. rész">
+                <span class="episode-number">13. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/S/s/r/2/Ssr2k.haa.mp4'); return false;">
+                <img src="jep14.webp" alt="14. rész">
+                <span class="episode-number">14. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/M/T/y/2/MTy2k.haa.mp4'); return false;">
+                <img src="jep15.webp" alt="15. rész">
+                <span class="episode-number">15. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/6/r/z/2/6rz2k.haa.mp4'); return false;">
+                <img src="jepp16.webp" alt="16. rész">
+                <span class="episode-number">16. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/U/1/R/2/U1R2k.haa.mp4'); return false;">
+                <img src="jep17.webp" alt="17. rész">
+                <span class="episode-number">17. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/G/F/S/2/GFS2k.haa.mp4'); return false;">
+                <img src="jep18.webp" alt="18. rész">
+                <span class="episode-number">18. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/k/d/T/2/kdT2k.haa.mp4'); return false;">
+                <img src="jep19.webp" alt="19. rész">
+                <span class="episode-number">19. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/E/U/T/2/EUT2k.haa.mp4'); return false;">
+                <img src="jep20.webp" alt="20. rész">
+                <span class="episode-number">11. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/w/s/U/2/wsU2k.haa.mp4'); return false;">
+                <img src="jep21.webp" alt="21. rész">
+                <span class="episode-number">21. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/a/9/U/2/a9U2k.haa.mp4'); return false;">
+                <img src="jep22.webp" alt="22. rész">
+                <span class="episode-number">22. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/C/e/V/2/CeV2k.haa.mp4'); return false;">
+                <img src="jep23.webp" alt="23. rész">
+                <span class="episode-number">23. Rész</span>
+            </a></li>
+            <li><a href="#" onclick="playVideo('https://1a-1791.com/video/s8/2/Y/7/V/2/Y7V2k.haa.mp4')" return false;"> <img src="jep24.webp" alt="24. rész"> <span class="episode-number">24. Rész</span></a></li>
+        <div class="video-container">
+            <video id="videoPlayer" controls>
+                <source id="videoSource" src="" type="video/mp4">
+                A böngésződ nem támogatja a videólejátszást.
+            </video>
+        </div>
+    </main>
+    <footer>
+        <p> &copy; 2024 AnimeHun</p>
+    </footer>
+
+
+    <script>
+        function playVideo(videoFile) {
+            const videoPlayer = document.getElementById('videoPlayer');
+            const videoSource = document.getElementById('videoSource');
+            videoSource.src = videoFile; // Frissítjük a forrást
+            videoPlayer.load(); // Újratöltjük a videót
+            videoPlayer.play(); // Lejátszás
+            document.querySelector('.video-container').style.display = 'block'; // Megjelenítjük a videó konténert
+        }
+
+        const description = document.getElementById('description');
+        const words = description.innerText.split(' '); // Szavakra bontja a szöveget
+        description.innerHTML = ''; // Kiüríti a leírást
+
+        words.forEach((word, index) => {
+            const span = document.createElement('span');
+            span.innerText = word + ' '; // Hozzáad egy szóközt
+            span.style.opacity = 0; // Kezdetben láthatatlan
+            description.appendChild(span); // Hozzáadja a span-t a leíráshoz
+
+            // Fokozatosan láthatóvá teszi a szót
+            setTimeout(() => {
+                span.style.opacity = 1;
+            }, index * 500); // Fokozatosan 500 ms-onként
+        });
+    </script>
+    
+     <script> 
+    function playVideo(videoFile) {
+        const videoPlayer = document.getElementById('videoPlayer');
+        const videoSource = document.getElementById('videoSource');
+        videoSource.src = videoFile; // Frissítjük a forrást
+        videoPlayer.load(); // Újratöltjük a videót
+        videoPlayer.play(); // Lejátszás
+        const videoContainer = document.querySelector('.video-container');
+        videoContainer.style.display = 'block'; // Megjelenítjük a videó konténert
+        
+        // Görgetés a videóhoz
+        videoContainer.scrollIntoView({ behavior: 'smooth' }); }   
+    </script>
+</body>
+</html>

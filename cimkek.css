@@ -1,0 +1,18 @@
+.tags {
+    margin-top: 10px; /* Felső margó a címkék körül */
+}
+
+.tag {
+    display: inline-block; /* Vízszintes elrendezés */
+    background-color: #2c3e50; /* Háttérszín a címkéknek */
+    color: white; /* Fehér szöveg */
+    padding: 5px 10px; /* Belső margó */
+    border-radius: 5px; /* Lekerekített sarkok */
+    text-decoration: none; /* Alapértelmezett link stílus eltávolítása */
+    margin-right: 5px; /* Különbség a címkék között */
+    transition: background-color 0.3s; /* Hover effektus */
+}
+
+.tag:hover {
+    background-color: #34495e; /* Sötétebb háttér hoverkor */
+}
